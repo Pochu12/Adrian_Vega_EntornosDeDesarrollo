@@ -53,7 +53,9 @@ public class AV_Rectangulo {
 		return "AV_Rectangulo [id=" + id + ", ladoA=" + ladoA + ", ladoB=" + ladoB + ", color=" + color + "]";
 	}
 	
-	
+    public double calcularArea() {
+        return ladoA * ladoB;
+    }
 	
 	
 	
