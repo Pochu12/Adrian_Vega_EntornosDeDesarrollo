@@ -22,6 +22,7 @@ public class Main {
         //Para calcular la diferencia restamos:
 	     double Diferencia = CalcularDiferencia(AreaCirculo, AreaRectangulo);
       
+	     //Imprimimos los resultados:
 		System.out.println(circulo);
 		System.out.println(rectangulo);
 		System.out.println("El área del circulo es:" + AreaCirculo);
@@ -29,18 +30,18 @@ public class Main {
 		System.out.println("La diferencia es de:" + Diferencia);
 	}
 
-	private static double CalcularDiferencia(double AreaCirculo, double AreaRectangulo) {
-		double Diferencia = (AreaCirculo - AreaRectangulo);
-		return Diferencia;
+	private static double CalcularAreaCirculo(AV_Circulo circulo) {
+		double AreaCirculo = CalcularAreaCirculo(circulo);
+		return AreaCirculo;
 	}
 
-	private static double CalcularAreaRectangulo(AV_Rectangulo rectangulo1) {
-		double AreaRectangulo = rectangulo1.getLadoA() * rectangulo1.getLadoB();
+	private static double CalcularAreaRectangulo(AV_Rectangulo rectangulo) {
+		double AreaRectangulo = CalcularAreaRectangulo(rectangulo);
 		return AreaRectangulo;
 	}
 
-	private static double CalcularAreaCirculo(AV_Circulo circulo1) {
-		double AreaCirculo = Math.PI * Math.pow(circulo1.getRadio(), 2);
-		return AreaCirculo;
+	private static double CalcularDiferencia(double AreaCirculo, double AreaRectangulo) {
+		double Diferencia = (AreaCirculo - AreaRectangulo);
+		return Diferencia;
 	}
 }

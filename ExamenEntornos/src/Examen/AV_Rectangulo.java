@@ -1,13 +1,21 @@
 package Examen;
 
+/**Autor: Adrián Vega
+	Versión: 1.0
+	
+	Esta clase nos representa un rectangulo donde obtenemos los lados, id y su color 
+	y nos permite calcular su área:
+*/
 public class AV_Rectangulo {
 	private int id;
 	private double ladoA;
 	private double ladoB;
 	private String color;
 	
+	//Constructor por defecto
 	public AV_Rectangulo( ) {}
 
+	//Constructor con todos los parametros:
 	public AV_Rectangulo(int id, double ladoA, double ladoB, String color) {
 		super();
 		this.id = id;
@@ -15,6 +23,7 @@ public class AV_Rectangulo {
 		this.ladoB = ladoB;
 		this.color = color;
 	}
+
 
 	public int getId() {
 		return id;
@@ -48,11 +57,13 @@ public class AV_Rectangulo {
 		this.color = color;
 	}
 
+	//Recapitulamos todos los atributos que hemos recogido:
 	@Override
 	public String toString() {
 		return "AV_Rectangulo [id=" + id + ", ladoA=" + ladoA + ", ladoB=" + ladoB + ", color=" + color + "]";
 	}
 	
+	//Calculamos el area del rectangulo:
     public double calcularArea() {
         return ladoA * ladoB;
     }
